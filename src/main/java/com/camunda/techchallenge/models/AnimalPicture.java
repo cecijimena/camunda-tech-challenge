@@ -3,8 +3,8 @@ package com.camunda.techchallenge.models;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.GenerationType;
-
 import java.time.Instant;
 
 @Entity
@@ -13,6 +13,7 @@ public class AnimalPicture {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
     private String animalType;
+    @Lob
     private byte[] imageData;
     private Instant createdAt;
 
