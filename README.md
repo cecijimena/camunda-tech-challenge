@@ -67,4 +67,18 @@ docker run -p 8080:8080 camunda-tech-challenge
 
 The service will then be available at [http://localhost:8080](http://localhost:8080), with the UI and Swagger docs reachable at the same paths described above.
 
-Looking forward to the next interview ;) 
+## Known limitations / Things to improve
+
+- **No global error handling**: there's no exception handler, so failures are thrown as raw 500s instead of 4xx responses. For example, an unsupported `animalType` throws `IllegalArgumentException`, and calling `GET /api/pictures/{animalType}/last` before any picture has been saved returns `null`.
+
+- **No request validation**: `count` in `POST /api/pictures` has no lower/upper bound, so a large or negative value can trigger a long-running fetch loop. `animalType` is matched case-sensitively against the provider map with no enum or normalization.
+
+- **In-memory H2 database**: all saved pictures are lost on every restart; there's no persistent database option.
+
+- **Hardcoded provider URLs**: external API endpoints (e.g. `https://cataas.com/cat`) are hardcoded in each provider instead of being externalized via an application property.
+
+- **Test coverage gaps**: existing unit tests cover the happy path; there's no coverage for the error/edge cases above (invalid animal type, missing picture, provider failures).
+
+---
+
+🐱🐶🦆 *Looking forward to meeting you in the next interview!*
