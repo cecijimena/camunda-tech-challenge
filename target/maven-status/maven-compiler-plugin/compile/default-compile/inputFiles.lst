@@ -1,9 +1,0 @@
-/Users/cecilia/Documents/camunda-tech-challenge/src/main/java/com/camunda/techchallenge/TechchallengeApplication.java
-/Users/cecilia/Documents/camunda-tech-challenge/src/main/java/com/camunda/techchallenge/controller/AnimalController.java
-/Users/cecilia/Documents/camunda-tech-challenge/src/main/java/com/camunda/techchallenge/models/AnimalPicture.java
-/Users/cecilia/Documents/camunda-tech-challenge/src/main/java/com/camunda/techchallenge/providers/AnimalImageProvider.java
-/Users/cecilia/Documents/camunda-tech-challenge/src/main/java/com/camunda/techchallenge/providers/CatImageProvider.java
-/Users/cecilia/Documents/camunda-tech-challenge/src/main/java/com/camunda/techchallenge/providers/DogImageProvider.java
-/Users/cecilia/Documents/camunda-tech-challenge/src/main/java/com/camunda/techchallenge/providers/DuckImageProvider.java
-/Users/cecilia/Documents/camunda-tech-challenge/src/main/java/com/camunda/techchallenge/repository/AnimalPictureRepository.java
-/Users/cecilia/Documents/camunda-tech-challenge/src/main/java/com/camunda/techchallenge/service/AnimalPictureService.java
