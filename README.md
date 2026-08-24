@@ -79,6 +79,8 @@ The service will then be available at [http://localhost:8080](http://localhost:8
 
 - **Test coverage gaps**: existing unit tests cover the happy path; there's no coverage for the error/edge cases above (invalid animal type, missing picture, provider failures).
 
+- **No way to browse saved pictures**: `fetchAndSave` can save several pictures at once, but the only read endpoint is `GET /api/pictures/{animalType}/last`, which returns just the most recently saved one. There's no endpoint to list all pictures, or fetch a specific picture by id.
+
 ---
 
 🐱🐶🦆 *Looking forward to meeting you in the next interview!*
